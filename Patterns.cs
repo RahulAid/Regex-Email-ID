@@ -7,7 +7,9 @@ public class Patterns
     {
         // part1: must contain abc
         // part2: must contain @ and bridgelabz
-        var regex = new Regex(@"^([a][b][c])\@([b][r][i][d][g][e][l][a][b][z])");
+        // part3: must contain dot after bridgelabz followed by co
+
+        var regex = new Regex(@"^([a][b][c])\@([b][r][i][d][g][e][l][a][b][z])\.([c][o])");
         bool matchRes = regex.IsMatch(email);
         if (matchRes == true)
         {
