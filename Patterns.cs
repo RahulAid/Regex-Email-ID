@@ -9,8 +9,9 @@ public class Patterns
         // part2: must contain @ and bridgelabz
         // part3: must contain dot after bridgelabz followed by co
         // part4: handle optional part xyz. only valid special characters proceeding to xyz are _,+,-,.
+        // part5: handle optional country code of 2 characters after co.(dot)
 
-        var regex = new Regex(@"^([a][b][c])([_\+\-\.])([a-zA-Z0-9]+)\@([b][r][i][d][g][e][l][a][b][z])\.([c][o])*$");
+        var regex = new Regex(@"^([a][b][c])([_\.\+\-])([a-zA-Z0-9]+)\@([b][r][i][d][g][e][l][a][b][z])\.([c][o])\.([a-z]{2})*$");
         bool matchRes = regex.IsMatch(email);
         if (matchRes == true)
         {

@@ -6,8 +6,13 @@
         {
             Console.WriteLine("Email Validation Using Regex");
 
+            Console.Write("Enter an EMail Address: ");
+            
+            string email = Console.ReadLine();
+
             Patterns objPattern = new Patterns();
-            objPattern.ValidateEMail("abc.xyz@bridgelabz.co");
+            objPattern.ValidateEMail(email);
+            Console.ReadLine();
         }
     }
 }
