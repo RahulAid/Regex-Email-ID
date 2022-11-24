@@ -7,7 +7,7 @@
             Console.WriteLine("Email Validation Using Regex");
 
             Patterns objPattern = new Patterns();
-            objPattern.ValidateEMail("abc@bridgelabz.co");
+            objPattern.ValidateEMail("abc.xyz@bridgelabz.co");
         }
     }
 }
